@@ -18,6 +18,7 @@ EVO_BUILD_TYPE := Official
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_BUILD_APERTURE_CAMERA := false
 TARGET_HAS_UDFPS := true
+TARGET_INCLUDE_VIPERFX := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_raphael
