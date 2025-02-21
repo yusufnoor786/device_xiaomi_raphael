@@ -24,6 +24,14 @@ $(call inherit-product, device/xiaomi/sm8150-common/msmnile.mk)
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+# Variant Properties
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,odm.*.prop,$(LOCAL_PATH)/configs/props/,$(TARGET_COPY_OUT_ODM)) \
+    $(call find-copy-subdir-files,product.*.prop,$(LOCAL_PATH)/configs/props/,$(TARGET_COPY_OUT_PRODUCT)) \
+    $(call find-copy-subdir-files,system.*.prop,$(LOCAL_PATH)/configs/props/,$(TARGET_COPY_OUT_SYSTEM)) \
+    $(call find-copy-subdir-files,system_ext.*.prop,$(LOCAL_PATH)/configs/props/,$(TARGET_COPY_OUT_SYSTEM_EXT)) \
+    $(call find-copy-subdir-files,vendor.*.prop,$(LOCAL_PATH)/configs/props/,$(TARGET_COPY_OUT_VENDOR))
+
 # Audio configs
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)

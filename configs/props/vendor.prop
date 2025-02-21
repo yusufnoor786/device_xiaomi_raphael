@@ -5,3 +5,6 @@ ro.hardware.audio.primary=raphael
 persist.vendor.fingerprint.sensor_location=540|2026|95
 persist.vendor.fingerprint.type=udfps_optical
 persist.vendor.fingerprint.udfps.control_illumination=true
+
+# Model properties
+import /system/vendor.${ro.boot.hwc}.prop

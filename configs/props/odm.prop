@@ -1,0 +1,2 @@
+# Model properties
+import /system/odm.${ro.boot.hwc}.prop

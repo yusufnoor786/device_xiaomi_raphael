@@ -24,7 +24,11 @@ TARGET_SCREEN_DENSITY := 440
 TARGET_KERNEL_CONFIG += vendor/xiaomi/raphael.config
 
 # Properties
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+TARGET_ODM_PROP += $(DEVICE_PATH)/configs/props/odm.prop
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/configs/props/product.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/props/system.prop
+TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/configs/props/system_ext.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/props/vendor.prop
 
 # Inherit from the proprietary version
 include vendor/xiaomi/raphael/BoardConfigVendor.mk

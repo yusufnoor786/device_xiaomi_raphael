@@ -1,0 +1,2 @@
+# Model properties
+import /system/system_ext.${ro.boot.hwc}.prop
