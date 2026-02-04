@@ -41,12 +41,15 @@ TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
 
 # Camera
-$(call inherit-product-if-exists, device/xiaomi/miuicamera/device.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
 
 PRODUCT_PACKAGES += \
     libMegviiFacepp-0.5.2 \
     libmegface \
     libpiex_shim
+
+$(call soong_config_set_bool,camera,override_format_from_reserved,true)
+$(call soong_config_set,camera,package_name,com.android.camera)
 
 # Camera motor
 PRODUCT_PACKAGES += \
