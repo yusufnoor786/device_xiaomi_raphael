@@ -20,6 +20,13 @@ TARGET_BUILD_APERTURE_CAMERA := false
 TARGET_HAS_UDFPS := true
 TARGET_INCLUDE_VIPERFX := true
 
+#MistOS
+MIST_BUILD_TYPE := OFFICIAL
+MISTOS_MAINTAINER := Zabuka_Zuzu
+WITH_GMS := true
+TARGET_USES_PICO_GAPPS := true
+TARGET_SUPPORTED_REFRESH_RATES := 60
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_raphael
 PRODUCT_DEVICE := raphael
